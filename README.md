@@ -5,6 +5,8 @@
 * **Local host website :**http://localhost:5173/
 * **deployed website link:**https://eloquent-unicorn-ef2d76.netlify.app/
 
+* Note on Deployment: The live Netlify link demonstrates the Frontend UI/Dashboard components. To experience the full data processing workflow (CSV parsing via Pandas and SQLite history), please follow the Local Setup instructions below to run the Django API alongside the frontend.
+
 
 ---
 
