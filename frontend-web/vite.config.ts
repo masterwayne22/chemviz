@@ -7,14 +7,14 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      // This forces the builder to look exactly in the local node_modules
+      // Force Vite to find next-themes in the local node_modules
       "next-themes": path.resolve(__dirname, "node_modules/next-themes"),
     },
   },
   build: {
     rollupOptions: {
-      // This ensures Rollup doesn't try to find it elsewhere
-      external: [],
+      // If the error persists, this tells Rollup to treat it as a runtime dependency
+      external: [], 
     },
     commonjsOptions: {
       include: [/next-themes/, /node_modules/],
