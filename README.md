@@ -2,7 +2,7 @@
 
 ### 🚀 Submission Details
 * **Git Repository:** https://github.com/masterwayne22/chemviz
-* **Live Web Deployment:**https://chemviz-smoky.vercel.app/
+* **Live Web link:**http://localhost:5173/
 
 
 ---
