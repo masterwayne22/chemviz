@@ -72,8 +72,13 @@ Follow these exact steps to replicate the environment:
 1. **Clone the Project:**
 ```bash
 git clone https://github.com/masterwayne22/chemviz.git
+
+2. Enter Directory:
 cd chemviz
+
+3. Install Dependencies:
 npm install
-npm install
+
+4. Run Development Server:
 npm run dev
 
