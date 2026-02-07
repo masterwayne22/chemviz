@@ -1,98 +1,82 @@
-🛠️ ChemViz: Chemical Equipment Parameter Visualizer
-Hybrid Data Analytics System (Web + Desktop)
-📋 Project Overview
-Purpose: A cross-platform tool developed for the FOSSEE Screening Task (IIT Bombay).
+⚗️ ChemViz: Industrial Parameter Visualizer
+FOSSEE Screening Task (IIT Bombay) | Hybrid Web + Desktop Application
 
-Core Function: Upload, process, and visualize industrial chemical equipment data.
+🚀 Project Essentials
+Live Link: https://eloquent-unicorn-ef2d76.netlify.app/ 
 
-Architecture: Hybrid System (Single Django Backend ↔ Dual Frontends).
+GitHub repo link:https://github.com/masterwayne22/chemviz
 
-Industry Focus: Designed with an Industrial HMI (Human Machine Interface) aesthetic.
+Architecture: Unified Python Backend ↔ Dual JavaScript/Python Frontends.
 
-✨ Key Features
-🚀 Cross-Platform Compatibility: Unified experience across browsers and native desktop environments.
+🛠️ The Tech Stack
+Backend Engine:
 
-📊 Automated Analytics: Powered by Pandas for instant calculation of:
+Django & DRF: Centralized REST API for all clients.
 
-Total Equipment Counts.
+Pandas: Real-time CSV processing and statistical analytics.
 
-Averaged parameters (Flowrate, Pressure, Temperature).
+SQLite: Reliable storage for the last 5 dataset uploads.
 
-Distribution of equipment types.
+Web Frontend:
 
-📈 Dynamic Visualization: * Web: Interactive charts via Chart.js.
+React 18 + Vite: High-performance dashboard rendering.
 
-Desktop: High-precision scientific plots via Matplotlib.
+Chart.js: Interactive visualization of equipment parameters.
 
-🔐 Security & History: * Basic Authentication for secure data access.
+Tailwind CSS: Custom "Industrial Control Panel" Design System.
 
-SQLite integration to manage the history of the last 5 uploaded datasets.
+Desktop Frontend:
 
-🛠️ Technical Stack
-Backend (Core Engine)
-Language: Python 3.10+
+PyQt5: Native desktop interface for offline-first monitoring.
 
-Framework: Django & Django REST Framework (DRF).
+Matplotlib: Scientific-grade plotting for equipment trends.
 
-Data Science: Pandas (CSV parsing & statistical analysis).
+⚡ Core Functionalities
+CSV Data Processing: Automated parsing of Name, Type, Flowrate, Pressure, and Temperature.
 
-Database: SQLite (History and User management).
+Analytics API: Calculation of global averages and equipment type distribution.
 
-Web Frontend
-Framework: React 18 (Vite build tool).
+Smart History: Persistence layer to toggle between the 5 most recent uploads.
 
-Styling: Tailwind CSS (Custom Industrial Design System).
+Industrial UI: High-contrast dark mode optimized for technical environments.
 
-Charts: Chart.js.
+PDF Reporting: (Implemented/Planned) Summary generation for equipment logs.
 
-Desktop Frontend
-Framework: PyQt5.
+📂 System Architecture
+📂 backend/ — Django API logic and Pandas analytics.
 
-Graphics: Matplotlib integration.
+📂 frontend-web/ — React dashboard source code.
 
-📂 Repository Structure
-📁 backend/ → Django project, API logic, and analytics modules.
+📂 frontend-desktop/ — PyQt5 native application scripts.
 
-📁 frontend-web/ → React source code and dashboard UI.
+📄 requirements.txt — Full Python dependency manifest.
 
-📁 frontend-desktop/ → PyQt5 native application scripts.
+📄 sample_equipment_data.csv — Official testing dataset.
 
-📄 sample_equipment_data.csv → Reference data for testing.
+⚙️ Installation & Execution
+1. Backend:
 
-📄 requirements.txt → Python dependency manifest.
-
-💻 Installation & Setup
-1. Backend (Django)
 cd backend
 
 pip install -r requirements.txt
 
-python manage.py migrate
-
 python manage.py runserver
 
+2. Web App:
 
-2. Web Frontend (React)
 cd frontend-web
 
-npm install
+npm install && npm run dev
 
-npm run dev
+3. Desktop App:
 
-Note: Dashboard accessible at http://localhost:5173
-
-3. Desktop Frontend (PyQt5)
 cd frontend-desktop
 
 python main.py
 
-🌐 Submission Links
-Live Web Demo: https://eloquent-unicorn-ef2d76.netlify.app/ 
+👤 Author & Submission
+Developer: Krishiv Sarva
 
-GitHub repo link: https://github.com/masterwayne22/chemviz
-
-Developed by: Krishiv Sarva
+Target: FOSSEE Internship Selection 2026
 
 License: MIT Open Source
-
-Target: FOSSEE Internship Program Evaluation
