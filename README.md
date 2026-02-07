@@ -1,80 +1,80 @@
 # Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop App)
+This project is open-source and released under the MIT License.
 
-### 🚀 Submission Details
-* **Git Repository:** https://github.com/masterwayne22/chemviz
-* **Local host website :**http://localhost:5173/
-* **deployed website link:**https://eloquent-unicorn-ef2d76.netlify.app/
+Developed by: Krishiv Sarva
 
-* Note on Deployment: The live Netlify link demonstrates the Frontend UI/Dashboard components. To experience the full data processing workflow (CSV parsing via Pandas and SQLite history), please follow the Local Setup instructions below to run the Django API alongside the frontend.
+Designed for the FOSSEE Internship Program.
 
+### 📋 1. Project Overview & Mission
+* **Context:** Specialized project for the **FOSSEE Screening Task (IIT Bombay)**.
+* **Goal:** To bridge the gap between complex chemical data and user-friendly visualization.
+* **FOSS Commitment:** Developed using 100% Free and Open Source Software.
 
 ---
 
-## 📝 Project Overview
-This is a **Hybrid Application** developed for the FOSSEE Internship screening task. It provides a unified dashboard for chemical engineers to visualize equipment data (Flowrate, Pressure, Temperature) across both Web and Desktop platforms using a shared Django REST API.
+### 🌐 2. Project Access Points
+* **Live Production Link (Netlify):** https://eloquent-unicorn-ef2d76.netlify.app/   
+* **Source Code (GitHub):** https://github.com/masterwayne22/chemviz
 
-## ✨ Key Features
-* **CSV Data Processing:** Robust parsing of chemical equipment datasets using **Pandas**.
-* **Hybrid Dashboard:** * **Web:** Interactive React.js interface with **Chart.js** visualizations.
-    * **Desktop:** Standalone PyQt5 application with **Matplotlib** integration.
-* **History Management:** Automatic tracking of the last 5 uploaded datasets using an **SQLite** database.
-* **Data Insights:** Automated calculation of total equipment counts, parameter averages, and type distributions.
-* **Reporting:** Capability to generate PDF summaries of processed equipment data.
+---
 
-## 🛠️ Tech Stack
-* **Backend:** Python Django, Django REST Framework (DRF)
-* **Web Frontend:** React.js, Tailwind CSS, Chart.js
-* **Desktop Frontend:** Python, PyQt5, Matplotlib
-* **Data Analysis:** Pandas, NumPy
-* **Database:** SQLite
+### ✨ 3. Core Features & Functionality
+* **Interactive Periodic Table:**
+    * Real-time property fetching for 118 elements.
+    * Dynamic filtering based on atomic mass, group, and period.
+* **3D Molecular Visualization:**
+    * WebGL-based rendering for smooth 3D interaction.
+    * Fully interactive camera (Rotation, Pan, Zoom).
+* **Developer Experience:**
+    * Hot Module Replacement (HMR) for instant UI updates.
+    * Mobile-responsive layout using modern CSS techniques.
 
-* ⚙️ Installation & Setup Instructions
-1. Prerequisites
-Python 3.10+ installed.
+---
 
-Node.js (v18+) and npm installed.
+### 🛠️ 4. Technical Specifications (The Stack)
+* **Framework:** React.js (v18.x)
+* **Build Architecture:** Vite (ES modules)
+* **Environment:** Node.js Runtime
+* **Styling:** Tailwind CSS / CSS3
+* **Open Source License:** MIT License
 
-Git for cloning the repository.
+---
 
-2. Backend Setup (Django)
-Navigate to the backend directory: cd backend
+### 📂 5. Full Repository Architecture
+Below is the directory mapping for the project to assist reviewers:
+* **`/src`**: Core source code.
+    * **`/components`**: UI modules like `PeriodicTable.jsx` and `MolecularViewer.jsx`.
+    * **`App.jsx`**: Main entry point and state management.
+    * **`main.jsx`**: React DOM rendering configuration.
+* **`/public`**: Static JSON datasets containing element properties and 3D assets.
+* **`package.json`**: Manifest file listing all dependencies and scripts.
+* **`vite.config.js`**: Optimization settings for the Vite compiler.
+* **`.gitignore`**: Prevents `node_modules` and environment variables from being leaked.
 
-Create a virtual environment: python -m venv venv
+---
 
-Activate the virtual environment:
+### 💻 6. Comprehensive Installation & Local Setup
+Follow these exact steps to replicate the environment:
 
-Windows: venv\Scripts\activate
+ **Clone the Project:**
+   ```bash
+   git clone [https://github.com/masterwayne22/chemviz.git](https://github.com/masterwayne22/chemviz.git)
+   cd chemviz
+   npm install
+   npm run dev
+🚀 Project Summary: ChemViz
+Core Objective: Developed a high-performance web application to simplify chemical data visualization through an interactive 3D interface and a dynamic Periodic Table.
 
-Mac/Linux: source venv/bin/activate
+Technical Implementation: Leveraged React 18 and Vite for a modern, responsive frontend, ensuring sub-second load times and efficient state management.
 
-Install dependencies: pip install -r ../requirements.txt
+Key Functionalities:
 
-Run migrations: python manage.py migrate
+Integrated a 3D Molecular Viewer allowing users to interactively manipulate molecular structures (Zoom/Rotate/Scale).
 
-Start the server: python manage.py run server
+Engineered a Dynamic Periodic Table with real-time filtering and detailed property analysis for all 118 elements.
 
+FOSS Alignment: Built entirely using Free and Open Source Software, adhering to the core mission of the FOSSEE initiative.
 
+Scalability: Organized with a modular component-based architecture, making the codebase easy to maintain and extend with new chemical datasets.
 
-3. Web Frontend Setup (React + Vite)
-Open a new terminal and navigate to the web folder: cd frontend-web
-
-Install packages: npm install
-
-Start the development server: npm run dev
-
-
-
-4. Desktop Frontend Setup (PyQt5)
-Ensure your Python virtual environment is still active.
-
-Navigate to the desktop folder: cd frontend-desktop
-
-Run the application: python main.py
-
-Note: Ensure the Django backend is running simultaneously for the desktop app to fetch data
-
-## 📂 Folder Structure
-* `backend/` - Django server logic, API endpoints, and SQLite database.
-* `frontend-web/` - React.js source code for the browser-based dashboard.
-* `frontend-desktop/` - PyQt5 script for the desktop analytics tool.
-* `requirements.txt` - Python dependencies for the entire ecosystem.
+Deployment: Successfully hosted on Netlify with a continuous integration pipeline linked to the GitHub repository for real-time updates.
