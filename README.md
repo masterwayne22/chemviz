@@ -6,11 +6,16 @@
 * **Core Objective:** Developed a high-performance web application to simplify chemical data visualization through an interactive 3D interface and a dynamic Periodic Table.
 * **Technical Implementation:** Leveraged **React 18** for a modern, responsive frontend, ensuring sub-second load times and efficient state management.
 * **Key Functionalities:**
-    * **3D Molecular Viewer:** Allows users to interactively manipulate molecular structures .
+    * **3D Molecular Viewer:** Allows users to interactively manipulate molecular structures.
     * **Dynamic Periodic Table:** Real-time filtering and detailed property analysis for all 118 elements.
 * **FOSS Alignment:** Built entirely using Free and Open Source Software, adhering to the core mission of the **FOSSEE initiative**.
 * **Scalability:** Organized with a modular component-based architecture for easy maintenance and expansion.
 * **Deployment:** Successfully hosted on Netlify with a CI/CD pipeline linked to GitHub.
+* License: This project is open-source and released under the MIT License.
+
+Developed by: Krishiv Sarva
+
+Designed for: FOSSEE Internship Program Evaluation.
 
 ---
 
@@ -22,8 +27,8 @@
 ---
 
 ### 🌐 2. Project Access Points
-* **Live Production Link (Netlify):** (https://eloquent-unicorn-ef2d76.netlify.app/)
-* **Source Code (GitHub):** (https://github.com/masterwayne22/chemviz)
+* **Live Production Link (Netlify):** [https://eloquent-unicorn-ef2d76.netlify.app/](https://eloquent-unicorn-ef2d76.netlify.app/)
+* **Source Code (GitHub):** [https://github.com/masterwayne22/chemviz](https://github.com/masterwayne22/chemviz)
 
 ---
 
@@ -50,14 +55,14 @@
 ---
 
 ### 📂 5. Full Repository Architecture
-* `/src`: Core source code.
-* `/src/components`: UI modules like `PeriodicTable.jsx` and `MolecularViewer.jsx`.
-* `App.jsx`: Main entry point and state management.
-* `main.jsx`: React DOM rendering configuration.
-* `/public`: Static JSON datasets containing element properties and 3D assets.
-* `package.json`: Manifest file listing dependencies and scripts.
-* `vite.config.js`: Optimization settings for the Vite compiler.
-* `.gitignore`: Prevents unnecessary files from being tracked.
+* **/src**: Core source code.
+* **/src/components**: UI modules like `PeriodicTable.jsx` and `MolecularViewer.jsx`.
+* **App.jsx**: Main entry point and state management.
+* **main.jsx**: React DOM rendering configuration.
+* **/public**: Static JSON datasets containing element properties and 3D assets.
+* **package.json**: Manifest file listing dependencies and scripts.
+* **vite.config.js**: Optimization settings for the Vite compiler.
+* **.gitignore**: Prevents unnecessary files from being tracked.
 
 ---
 
@@ -65,15 +70,10 @@
 Follow these exact steps to replicate the environment:
 
 1. **Clone the Project:**
-   ```bash
-   git clone [https://github.com/masterwayne22/chemviz.git](https://github.com/masterwayne22/chemviz.git)
-   cd chemviz
-   npm install
-   npm run dev
+```bash
+git clone https://github.com/masterwayne22/chemviz.git
+cd chemviz
+npm install
+npm install
+npm run dev
 
-   
-License: This project is open-source and released under the MIT License.
-
-Developed by: Krishiv Sarva
-
-Designed for: FOSSEE Internship Program Evaluation.
