@@ -1,82 +1,129 @@
-⚗️ ChemViz: Industrial Parameter Visualizer
-FOSSEE Screening Task (IIT Bombay) | Hybrid Web + Desktop Application
+⚗️ ChemViz — Industrial Parameter Visualization Platform
 
-🚀 Project Essentials
-Live Link: https://eloquent-unicorn-ef2d76.netlify.app/ 
+FOSSEE Internship Screening Task | IIT Bombay (2026)
 
-GitHub repo link:https://github.com/masterwayne22/chemviz
+A hybrid web + desktop scientific visualization system for analyzing industrial equipment parameters from structured datasets.
 
-Architecture: Unified Python Backend ↔ Dual JavaScript/Python Frontends.
+🚀 Live Demo
 
-🛠️ The Tech Stack
-Backend Engine:
+🌐 Web Dashboard:
+👉 https://eloquent-unicorn-ef2d76.netlify.app/
+🌐 Deployment Note:  
+The web dashboard is deployed on Netlify as a static frontend demonstration. Due to hosting constraints, the Django REST analytics backend is not deployed publicly and must be executed locally for full CSV processing and API-based computations.
 
-Django & DRF: Centralized REST API for all clients.
 
-Pandas: Real-time CSV processing and statistical analytics.
+📂 Source Code:
+👉 https://github.com/masterwayne22/chemviz
 
-SQLite: Reliable storage for the last 5 dataset uploads.
+🧠 Project Overview
 
-Web Frontend:
+ChemViz is a unified data visualization and analytics platform designed to help chemical engineering students and researchers analyze industrial equipment datasets.
 
-React 18 + Vite: High-performance dashboard rendering.
+The system provides:
 
-Chart.js: Interactive visualization of equipment parameters.
+A centralized Python backend for data processing and analytics
 
-Tailwind CSS: Custom "Industrial Control Panel" Design System.
+A high-performance web dashboard for visualization
 
-Desktop Frontend:
+A native desktop application for offline monitoring
 
-PyQt5: Native desktop interface for offline-first monitoring.
+This project aims to reduce dependency on proprietary industrial visualization tools by providing an open-source, extensible scientific analytics framework.
 
-Matplotlib: Scientific-grade plotting for equipment trends.
+🏗️ System Architecture
+        CSV Dataset Upload
+                 ↓
+        Django REST Analytics API
+                 ↓
+   ┌───────────────┴───────────────┐
+   │                               │
+React Web Dashboard         PyQt5 Desktop Client
 
-⚡ Core Functionalities
-CSV Data Processing: Automated parsing of Name, Type, Flowrate, Pressure, and Temperature.
+🛠️ Tech Stack
+🔹 Backend Engine
 
-Analytics API: Calculation of global averages and equipment type distribution.
+Django + Django REST Framework (DRF) — Centralized analytics API
 
-Smart History: Persistence layer to toggle between the 5 most recent uploads.
+Pandas — Dataset parsing & statistical computations
 
-Industrial UI: High-contrast dark mode optimized for technical environments.
+SQLite — Persistence for last 5 dataset uploads
 
-PDF Reporting: (Implemented/Planned) Summary generation for equipment logs.
+🔹 Web Frontend
 
-📂 System Architecture
-📂 backend/ — Django API logic and Pandas analytics.
+React 18 + Vite — High-performance UI rendering
 
-📂 frontend-web/ — React dashboard source code.
+Chart.js — Interactive scientific plots
 
-📂 frontend-desktop/ — PyQt5 native application scripts.
+Tailwind CSS — Industrial dark-mode dashboard UI
 
-📄 requirements.txt — Full Python dependency manifest.
+🔹 Desktop Frontend
 
-📄 sample_equipment_data.csv — Official testing dataset.
+PyQt5 — Native desktop monitoring application
+
+Matplotlib — Scientific plotting and trend visualization
+
+⚡ Core Features
+📥 CSV Data Processing
+
+Automatic parsing of:
+
+Equipment Name
+
+Equipment Type
+
+Flowrate
+
+Pressure
+
+Temperature
+
+📊 Analytics API
+
+Global averages of industrial parameters
+
+Equipment-type distribution statistics
+
+🧠 Smart Dataset History
+
+Stores and toggles between the last 5 uploaded datasets
+
+🖥️ Industrial Control Panel UI
+
+High-contrast dark theme optimized for technical environments
+
+📄 PDF Reporting (Planned)
+
+Automated dataset summary and equipment log reports
+
+⚠️ Current Limitation
+After uploading a dataset, the web frontend requires a manual page refresh to retrieve updated analytics from the backend API.  
+This is due to the current request-based update mechanism and will be replaced with real-time synchronization in future versions.
+
+📂 Project Structure
+backend/           Django REST API & Pandas analytics
+frontend-web/      React dashboard source code
+frontend-desktop/  PyQt5 desktop monitoring client
+requirements.txt   Python dependency manifest
+sample_equipment_data.csv  Official test dataset
 
 ⚙️ Installation & Execution
-1. Backend:
-
+🔹 Backend
 cd backend
-
 pip install -r requirements.txt
-
 python manage.py runserver
 
-2. Web App:
-
+🔹 Web Dashboard
 cd frontend-web
+npm install
+npm run dev
 
-npm install && npm run dev
-
-3. Desktop App:
-
+🔹 Desktop Application
 cd frontend-desktop
-
 python main.py
+👤 Author
 
-👤 Author & Submission
-Developer: Krishiv Sarva
+Krishiv Sarva
+FOSSEE Internship Applicant 2026
 
-Target: FOSSEE Internship Selection 2026
+📜 License
 
-License: MIT Open Source
+MIT Open Source License
