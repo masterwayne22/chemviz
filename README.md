@@ -121,7 +121,7 @@ backend/            Django REST API & Pandas analytics
 frontend-web/       React dashboard source code  
 frontend-desktop/   PyQt5 desktop monitoring client  
 requirements.txt    Python dependency manifest  
-sample_equipment_data.csv   Official test dataset  
+
 
 ⚙️ Installation & Execution
 🔹 Backend
