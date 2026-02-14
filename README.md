@@ -1,6 +1,6 @@
 ⚗️ ChemViz — Industrial Parameter Visualization Platform
 
-FOSSEE Internship Screening Task | IIT Bombay (2026)
+
 
 A hybrid web + desktop scientific visualization system for analyzing industrial equipment parameters from structured datasets.
 
@@ -17,7 +17,6 @@ The Django REST analytics backend is not publicly deployed due to free hosting c
 
 Full CSV processing and API-based computations require running the backend locally.
 
-Earlier Netlify deployment was suspended due to free-tier limits. This Cloudflare link is the final working deployment.
 
 📂 Source Code
 
@@ -137,7 +136,6 @@ python main.py
 👤 Author
 
 Krishiv Sarva
-FOSSEE Internship Applicant 2026
 
 📜 License
 
